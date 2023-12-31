@@ -7,7 +7,7 @@ export const tryExcel = async () => {
     let excel = new Excel();
 
     excel.Visible();
-    let Book: WorkBook = excel.WorkBooks.Open("F:\\Apps\\ExcelXvba\\index.xlsb");
+    let Book: WorkBook = excel.WorkBooks.Open("C:\\Users\\otek\\OneDrive\\Documents\\Coding\\ExcelXvba\\src\\example\\Mergey.xlsm");
 
     let sheets = excel.Sheets;
 
@@ -43,7 +43,7 @@ export const tryExcel = async () => {
           break;
       }
 
-      const fileExport = "F:\\Apps\\ExcelXvba\\vba\\" + compFileName;
+      const fileExport = "C:\\Users\\otek\\OneDrive\\Documents\\Coding\\ExcelXvba\\src\\example\\Mergey.xlsm" + compFileName;
 
       vbComponent.Export(fileExport);
     }

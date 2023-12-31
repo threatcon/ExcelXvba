@@ -44,8 +44,7 @@ var tryExcel = function () { return __awaiter(void 0, void 0, void 0, function (
         try {
             excel = new Excel_1.Excel();
             excel.Visible();
-            Book = excel.WorkBooks.Open("F:\\Apps\\ExcelXvba\\index.xlsb");
-            sheets = excel.Sheets;
+            Book = excel.WorkBooks.Open("C:\\Users\\otek\\OneDrive\\Documents\\Coding\\ExcelXvba\\src\\example\\Mergey.xlsm");
             total = sheets.Count();
             console.log("--->", total);
             exName = excel.Name();
@@ -72,7 +71,7 @@ var tryExcel = function () { return __awaiter(void 0, void 0, void 0, function (
                     default:
                         break;
                 }
-                fileExport = "F:\\Apps\\ExcelXvba\\vba\\" + compFileName;
+                fileExport = "C:\\Users\\otek\\OneDrive\\Documents\\Coding\\ExcelXvba\\src\\example\\Mergey.xlsm" + compFileName;
                 vbComponent.Export(fileExport);
             }
             excel.Quit();
